@@ -5,7 +5,6 @@
     using System.Globalization;
     using System.Linq;
     using System.Text.RegularExpressions;
-
     using SafeMapper;
 
     public class RegexMap<T>
@@ -20,7 +19,7 @@
         }
 
         public RegexMap(StringOperation operations)
-            : this(new RegexMapConfiguration { GlobalStringOperation = operations })
+            : this(new RegexMapConfiguration {GlobalStringOperation = operations})
         {
         }
 
@@ -129,7 +128,7 @@
 
         private bool IsNumeric(string input)
         {
-            return input.All(t => (t >= 48) && (t <= 57));
+            return input.All(t => (t >= '0') && (t <= '9'));
         }
 
         private bool CheckIfSimpleMapType()
