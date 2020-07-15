@@ -10,7 +10,10 @@
 
         public bool Equals(TestModel other)
         {
-            return this.Id.Equals(other.Id) && string.Equals(this.Name, other.Name);
+            return other != null
+                   && this.Id.Equals(other.Id)
+                   && string.Equals(this.Name, other.Name)
+                ;
         }
     }
 }
