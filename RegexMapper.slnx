@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/.nuget/">
+    <File Path=".nuget/packages.config" />
+  </Folder>
+  <Project Path="RegexMapper.Tests/RegexMapper.Tests.csproj" />
+  <Project Path="RegexMapper/RegexMapper.csproj" />
+</Solution>
